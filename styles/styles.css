@@ -75,7 +75,9 @@ margin: 0 auto;
 .display-inline{
     display: inline;
 }
-
+.text-align-center{
+    text-align:center;
+}
 
 /* shared style end */
 
@@ -202,6 +204,66 @@ margin: 0 auto;
     gap: 24px;
 }
 /* about us section end */
+/* our service start */
+.our-service{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.service-cards{
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 20px;
+ justify-content: space-evenly;
+ margin-top: 100px;
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 222px; */
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    /* padding-left: 28px;
+    padding-right: 28px; */
+    padding: 24px;
+    padding-bottom: 24px;
+    position: relative;
+}
+.card > p{
+    font-size: 14px;
+}
+.card:hover {
+    background-color: #1195FF;
+    color: #ffffff;
+    box-shadow:0px 4px 20px rgba(12, 82, 137, 0.2);
+}
+.card:hover .card-heading{
+    color: #ffffff;
+}
+.card-heading{
+    margin-top: 74px;
+}
+.card-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 200px;
+    border: 1px solid #DEDEDE;
+    background-color: #ffffff;
+    position: absolute;
+    top: -50px;
+
+    
+    /* margin-bottom:16px; */
+}
+
+
+
+/* our service end */
 
 /* responsive  */
 @media screen and (max-width: 576px) {
@@ -269,6 +331,19 @@ margin: 0 auto;
     grid-template-rows:116px 253px;
     gap: 24px;
 } */
+ /* our service start */
+.our-service{
+    margin-top: 60px;
+}
+.service-cards{
+    grid-template-columns: 1fr;
+    gap: 100px;
+    padding: 0 40px;
+}
+
+
+
+/* our service end */
 }
 
 /* tab  */
@@ -322,4 +397,18 @@ margin: 0 auto;
     grid-template-rows:116px 253px;
     
 } */
+
+/* our service start */
+.our-service{
+    margin-top: 80px;
+}
+
+.service-cards{
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 0 40px;
+}
+
+
+/* our service end */
 }
