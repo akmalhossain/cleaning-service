@@ -374,7 +374,127 @@ margin: 0 auto;
 }
  /* Recent Work section END */
 
+ /* served details style  */
 
+.served-details{
+    border-radius: 5px;
+    margin: 100px 0;
+    background-color: #1195FF;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    padding: 58px 0;
+}
+.served-details-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.served-card-number{
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.served-card-content{
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.vertical-rular-1{
+    border-right: 1px solid #ffffff;
+}
+.vertical-rular-2{
+    border-right: 1px solid #ffffff;
+}
+.vertical-rular-3{
+    border-right: 1px solid #ffffff;
+}
+
+ /* served details style  end*/
+ /* review section style */
+
+.review-container{
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px
+    
+}
+.review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 32px;
+    border:1px solid #DEDEDE;
+    border-radius: 5px;
+    position: relative;
+}
+
+.over-the-box{
+    position: absolute;
+    top:-40px;
+}
+.review:hover {
+    background-color: #1195FF;
+    color: white;
+}
+.review-card-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+.reviewcard-sub-title{
+    margin-top: 5px;
+}
+
+
+
+ /* review section end */
+
+
+ /* subscribe  */
+
+ .subscribe-news-letter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1195FF;
+    margin-top: 100px;
+    padding: 30px 50px;
+    border-radius: 5px;
+
+ }
+ .subscribe-title{
+    font-size: 32px;
+    font-weight: 500;
+    color:#ffffff
+ }
+ .subscribe-content > p{
+    color: #ffffff;
+ }
+ .subscribe-form{
+    width: 50%;
+    display: flex;
+ }
+ .subscribe-form > input{
+    border: 1px solid #ffffff;
+    background: none;
+    border-radius: 5px 0 0 5px;
+    color: rgba(155, 211, 255, 1);
+    width: calc(100% - 44px);
+    padding:16px 22px ;
+ }
+ .subscribe-form > button{
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    background: #ffffff;
+    padding:16px 22px ;
+ }
+ ::placeholder{
+    color: rgba(155, 211, 255, 1); 
+ }
 
 /* responsive  */
 @media screen and (max-width: 576px) {
@@ -457,8 +577,8 @@ margin: 0 auto;
 
 .team-members{
     grid-template-columns: 1fr;
-    padding: 50px;
-    margin-top: 10px;
+    padding: 10px;
+    
 }
 .recent-works-container{
     grid-template-columns: 1fr;
@@ -467,11 +587,35 @@ margin: 0 auto;
 
 /* recent work section  */
 
+/* served card content start  */
+
+.served-details{
+    grid-template-columns: 1fr;
+}
+.vertical-rular{
+    border: none;
+}
+
+
+.served-details{
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+}
+.vertical-rular-2{
+    border-right: none;
+}
+/* served card content end */
+/* review  */
+.review-container{
+    grid-template-columns: 1fr;
+    gap: 60px;
+}
 
 }
 
 /* tab  */
-@media screen and (min-width: 576px) and (max-width: 992px) {
+@media screen and (min-width: 577px) and (max-width: 992px) {
     
 
 .container{
@@ -539,9 +683,28 @@ margin: 0 auto;
 /* our member  */
 
 .team-members{
-    grid-template-columns: repeat(2, 1fr);
-    padding: 50px;
+    grid-template-columns: repeat(2 , 1fr);
+    padding: 10px;
     margin-top: 10px;
 }
+
+/* served card content start  */
+
+.served-details{
+    
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+}
+
+.vertical-rular-2{
+    border-right: none;
+
+}
+/* served card content end */
+
+/* review  */
+
+
+
 
 }
